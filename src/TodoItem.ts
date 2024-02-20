@@ -6,7 +6,9 @@ class TodoItem{
         this.complete=complete;
     }
 
-    printDetails(){
+    printDetails():void {
         console.log(`${this.id}\t${this.task}\t${this.complete ? "complete\t":""}`);
     }
 }
+
+export default TodoItem;
