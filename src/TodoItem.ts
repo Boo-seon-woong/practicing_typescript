@@ -1,6 +1,10 @@
 class TodoItem{
 
-    constructor(public id:number,public task:string,public complete:boolean){
+    constructor(
+        public id:number,
+        public task:string,
+        public complete:boolean = false
+    ){
         this.id=id;
         this.task=task;
         this.complete=complete;
