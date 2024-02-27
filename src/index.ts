@@ -14,6 +14,9 @@ const sampleTodos : TodoItem[] = data.map(
 const myTodoCollection = new TodoCollection("My Todo List", sampleTodos);
 
 myTodoCollection.addTodo("JavaScript 학습하기");
+
+console.log(myTodoCollection.getTodoById(1));
+
 myTodoCollection.markComplete(3,true);
 
 console.log(`mytodocollection username--${myTodoCollection.userName}`);

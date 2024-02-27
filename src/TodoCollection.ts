@@ -6,7 +6,7 @@ class TodoCollection{
     constructor(public userName:string, public todoItems:TodoItem[] = []){}
 
     getTodoById(id: number):TodoItem | undefined{
-        return this.todoItems.find((item) => item.id == id);
+        return this.todoItems.find((item) => item.id == id );
     }
     addTodo(task:string) :number | undefined{
         while(this.getTodoById(this.nextId)){
