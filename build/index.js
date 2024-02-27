@@ -12,7 +12,12 @@ console.log("\n\n\nand also npm init -y, nodemon, currently also hello! from now
 const sampleTodos = data_1.data.map((item) => new TodoItem_1.default(item.id, item.task, item.complete));
 const myTodoCollection = new TodoCollection_1.default("My Todo List", sampleTodos);
 myTodoCollection.addTodo("JavaScript 학습하기");
-console.log(myTodoCollection.getTodoById(1));
+//console.log(myTodoCollection.getTodoById(1));
 myTodoCollection.markComplete(3, true);
 console.log(`mytodocollection username--${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails());
+const aaa = myTodoCollection.getTodoItems(true);
+myTodoCollection.removeComplete();
+const bbb = myTodoCollection.getTodoItems(false);
+console.log(aaa);
+console.log(bbb);
+//myTodoCollection.itemMap.forEach((value,key)=>{console.log(key+value.task)});

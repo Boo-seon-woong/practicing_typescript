@@ -15,9 +15,13 @@ const myTodoCollection = new TodoCollection("My Todo List", sampleTodos);
 
 myTodoCollection.addTodo("JavaScript 학습하기");
 
-console.log(myTodoCollection.getTodoById(1));
-
+//console.log(myTodoCollection.getTodoById(1));
 myTodoCollection.markComplete(3,true);
 
 console.log(`mytodocollection username--${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails());
+const aaa : TodoItem[] = myTodoCollection.getTodoItems(true);
+myTodoCollection.removeComplete();
+const bbb : TodoItem[] = myTodoCollection.getTodoItems(false);
+console.log(aaa);
+console.log(bbb);
+//myTodoCollection.itemMap.forEach((value,key)=>{console.log(key+value.task)});
