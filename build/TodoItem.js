@@ -13,7 +13,7 @@ class TodoItem {
         this.complete = complete;
     }
     printDetails() {
-        console.log(`${this.id}\t${this.task}\t${this.complete ? "complete\t" : ""}`);
+        console.log(`${this.id}\t${this.task}\t${this.complete ? "(complete)\t" : ""}`);
     }
 }
 exports.default = TodoItem;
