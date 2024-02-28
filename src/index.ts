@@ -22,6 +22,11 @@ console.log(`mytodocollection username--${myTodoCollection.userName}`);
 const aaa : TodoItem[] = myTodoCollection.getTodoItems(true);
 myTodoCollection.removeComplete();
 const bbb : TodoItem[] = myTodoCollection.getTodoItems(false);
-console.log(aaa);
 console.log(bbb);
+console.log(aaa);
 //myTodoCollection.itemMap.forEach((value,key)=>{console.log(key+value.task)});
+
+
+
+
+//야야야ㅑㅇ 니 아직 영상 중간에 removecomplete 다 안만듬 꼭 이어서 공부해라

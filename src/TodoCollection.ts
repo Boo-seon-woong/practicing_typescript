@@ -33,16 +33,16 @@ class TodoCollection{
     }
 
     removeComplete():void {
-        /*this.itemMap.forEach((item) => {
+        this.itemMap.forEach((item) => {
             if(item.complete){
                 this.itemMap.delete(item.id);
             }
-        })*/
-        this.itemMap.forEach(function(value,key){
+        })
+        /*this.itemMap.forEach(function(value,key){
             if(value.complete){
                 this.itemMap.delete(key);
             }
-        })
+        })왜 익명함수 말고 화살표함수를 써야 되는지는 이 주석을 실행시켜 보면 알 수 있음*/
     }
 
     markComplete(id : number, complete : boolean) : void{
