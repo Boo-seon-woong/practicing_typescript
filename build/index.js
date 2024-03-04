@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const data_1 = require("./data");
-const TodoCollection_1 = __importDefault(require("./TodoCollection"));
-const TodoItem_1 = __importDefault(require("./TodoItem"));
+const TodoCollection_1 = __importDefault(require("./service/TodoCollection"));
+const TodoItem_1 = __importDefault(require("./model/TodoItem"));
 console.log("hello javascript and typescript!");
 console.log("and also npm init -y, nodemon, currently also hello! from now on, build and run will be simultaneously processed with only comment 'npm start' becuase of tsconfig");
 //---------------------

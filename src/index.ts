@@ -1,6 +1,6 @@
 import { data } from "./data";
-import TodoCollection from "./TodoCollection";
-import TodoItem from "./TodoItem";
+import TodoCollection from "./service/TodoCollection";
+import TodoItem from "./model/TodoItem";
 console.log("hello javascript and typescript!");
 console.log("and also npm init -y, nodemon, currently also hello! from now on, build and run will be simultaneously processed with only comment 'npm start' becuase of tsconfig")
 //---------------------

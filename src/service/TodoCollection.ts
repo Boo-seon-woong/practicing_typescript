@@ -1,4 +1,4 @@
-import TodoItem from "./TodoItem";
+import TodoItem from "../model/TodoItem";
 const a:TodoItem = new TodoItem(1,'a',false);
 class TodoCollection{
     private nextId : number=1;
