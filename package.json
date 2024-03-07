@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:build" : "tsc",
-    "start:run" : "nodemon build/index.js",
+    "start:build": "tsc",
+    "start:run": "nodemon build/index.js",
     "start": "concurrently \"tsc -w\" \"nodemon build/index.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/inquirer": "^9.0.7",
     "concurrently": "^8.2.2",
+    "inquirer": "^8.2.6",
     "nodemon": "^3.0.3"
   }
 }

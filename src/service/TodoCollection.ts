@@ -1,4 +1,5 @@
 import TodoItem from "../model/TodoItem";
+import { ItemCount } from "../model/itemCount";
 const a:TodoItem = new TodoItem(1,'a',false);
 class TodoCollection{
     private nextId : number=1;
@@ -10,6 +11,12 @@ class TodoCollection{
         todoItems.forEach((item)=> this.itemMap.set(item.id,item));
     }
 
+    getItemCounts():ItemCount {
+        return {
+            total: this.itemMap.size,
+            incomplete: this.getTodoItems(false).length,
+        };
+    }
 
     getTodoById(id: number):TodoItem | undefined{
         return this.itemMap.get(id);
